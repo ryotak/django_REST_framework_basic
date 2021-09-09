@@ -24,7 +24,7 @@ RUN mkdir /profiles-rest-api
 WORKDIR /profiles-rest-api
 
 # ローカルのprofiles-rest-apiディレクトリをコンテナにコピー
-COPY ./profiles-rest-api /profiles-rest-api
+# COPY ./profiles-rest-api /profiles-rest-api
 
 # アプリケーションを実行するためのユーザを作成する
 # -D：Don't assign a password
