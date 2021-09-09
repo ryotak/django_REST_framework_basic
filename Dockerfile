@@ -28,7 +28,7 @@ WORKDIR /profiles-rest-api
 
 # アプリケーションを実行するためのユーザを作成する
 # -D：Don't assign a password
-# RUN adduser -D user
+RUN adduser -D user
 
 # ユーザをrootから変更
-# USER user
+USER user
