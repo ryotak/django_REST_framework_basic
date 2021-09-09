@@ -1,5 +1,6 @@
 # /django_REST_framework_basic/requirements.txt
 
 # 必要なパッケージを記述
-Django
+django
 djangorestframework
+django-filter
