@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # rest_frameworkをDjangoプロジェクトに読み込み
+    'rest_framework',
+    # APIのToken認証
+    'rest_framework.authtoken',
+    # 自作したDjangoアプリをDjangoプロジェクトに追加
+    'profiles_api',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +129,6 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Djangoプロジェクトのユーザ認証を変更
+AUTH_USER_MODEL = 'profiles_api.UserProfile'
